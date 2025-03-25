@@ -1,0 +1,39 @@
+﻿<div style="height: 70vh;" class="row justify-content-center align-items-center">
+    <div class="col-md-6 bg-light rounded-3 p-5">
+        <h1>Signup</h1>
+        <form method="post" action="/home/signup">
+
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select class="form-select" id="color-select" name="color">
+                    <option value="-1">-- Chose a color --</option>
+                    <option value="0">Red</option>
+                    <option value="1">Green</option>
+                    <option value="2">Purple</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input id="name" type="text" class="form-control form-control-lg" placeholder="Name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input id="age" type="text" class="form-control form-control-lg" placeholder="Age" name="Age">
+            </div>
+            <div class="form-group">
+                <label for="signup">Sign Up To Newsletter:</label>
+                <input id="signup" type="checkbox" value="true" name="signuptonewsletter" />
+            </div>
+            <div class="d-grid gap-2 mt-3">
+                <a class="btn btn-dark" href="/home/index?sort=asc">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                </a>
+                <button disabled class="btn btn-primary">
+                    <i style="font-size: 40px;" class="bi bi-postage-heart-fill"></i>
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
